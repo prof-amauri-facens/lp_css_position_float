@@ -1,0 +1,20 @@
+div { 
+    border: solid red;  
+    /*
+    A unidade "ex" em CSS representa a altura do caractere 
+    "x" na fonte atualmente usada. É uma unidade de medida 
+    relativa, o que significa que seu valor depende do 
+    tamanho da fonte. No caso de max-width: 70ex;, o 
+    elemento terá uma largura máxima de 70 vezes a altura
+    do caractere "x". Isso permite que a largura se ajuste 
+    de acordo com o tamanho da fonte, o que pode ser útil 
+    para layouts responsivos.
+    */
+    max-width: 70ex;  
+}
+
+h4  { 
+    float: left;  
+    margin: 0; 
+}
+

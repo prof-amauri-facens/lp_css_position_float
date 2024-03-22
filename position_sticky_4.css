@@ -1,0 +1,45 @@
+/* Define que o box-sizing de todos os elementos será border-box,
+   o que significa que as propriedades width e height incluirão o padding e a borda,
+   em vez de se adicionar a eles */
+   * {
+    box-sizing: border-box;
+  }
+  
+  /* Define o estilo para as divs dentro de dl (definição de lista),
+     especificando um fundo branco e um padding apenas na parte superior */
+  dl div {
+    background: #fff;
+    padding: 24px 0 0 0;
+  }
+  
+  /* Define o estilo para os termos (dt) da definição de lista,
+     especificando um fundo, cores, fonte e posicionamento sticky (fixo)
+     para que o termo fique sempre visível ao rolar a página */
+  dt {
+    background: #b8c1c8;
+    border-bottom: 1px solid #989ea4;
+    border-top: 1px solid #717d85;
+    color: #fff;
+    font: bold 18px/21px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 2px 0 0 12px;
+    position: -webkit-sticky; /* Necessário para compatibilidade com navegadores WebKit antigos */
+    position: sticky; /* Define o posicionamento como sticky (fixo) */
+    top: -1px; /* Posiciona o elemento 1px acima do topo */
+  }
+  
+  /* Define o estilo para as descrições (dd) da definição de lista,
+     especificando fonte, margem, padding e white-space para evitar quebra de linha */
+  dd {
+    font: bold 20px/45px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 0 12px;
+    white-space: nowrap; /* Evita quebras de linha */
+  }
+  
+  /* Define o estilo para as descrições seguintes à primeira (dd + dd),
+     adicionando uma borda superior para separá-las visualmente */
+  dd + dd {
+    border-top: 1px solid #ccc;
+  }
+  
